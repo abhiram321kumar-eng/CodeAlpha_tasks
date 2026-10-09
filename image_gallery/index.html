@@ -1,1 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Code Alpha Image Gallery</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body>
+
+  <!-- =========================
+       NAVIGATION BAR
+  ========================== -->
+
+  <header class="navbar">
+
+    <a href="#" class="logo">
+      Code Alpha
+    </a>
+
+    <div class="nav-label">
+      CODE ALPHA · IMAGE GALLERY
+    </div>
+
+    <a href="#gallery" class="nav-link">
+      Explore Gallery ↗
+    </a>
+
+  </header>
+
+
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
+
+  <main class="container">
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+      <p class="eyebrow">
+        <span class="status-dot"></span>
+        CODE ALPHA · VISUAL JOURNAL
+      </p>
+
+
+      <h1>
+        Code Alpha<br>
+        <span>Image Gallery.</span>
+      </h1>
+
+
+      <p class="hero-text">
+        Explore a curated collection of beautiful moments,
+        places, nature, cities, travel and wildlife.
+      </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         GALLERY SECTION
+    ========================== -->
+
+    <section id="gallery" class="gallery-section">
+
+
+      <div class="section-heading">
+
+        <div>
+
+          <p class="eyebrow">
+            THE COLLECTION
+          </p>
+
+          <h2>
+            Explore the gallery
+          </h2>
+
+        </div>
+
+
+        <p id="imageCount" class="image-count">
+          12 photographs
+        </p>
+
+      </div>
+
+
+
+      <!-- =========================
+           CATEGORY FILTERS
+      ========================== -->
+
+      <div class="filters" id="filters">
+
+
+        <button
+          class="filter-btn active"
+          data-category="all"
+          aria-pressed="true">
+
+          All Photos
+
+        </button>
+
+
+        <button
+          class="filter-btn"
+          data-category="nature"
+          aria-pressed="false">
+
+          Nature
+
+        </button>
+
+
+        <button
+          class="filter-btn"
+          data-category="city"
+          aria-pressed="false">
+
+          City
+
+        </button>
+
+
+        <button
+          class="filter-btn"
+          data-category="travel"
+          aria-pressed="false">
+
+          Travel
+
+        </button>
+
+
+        <button
+          class="filter-btn"
+          data-category="animals"
+          aria-pressed="false">
+
+          Animals
+
+        </button>
+
+
+      </div>
+
+
+
+      <!-- =========================
+           IMAGE GRID
+      ========================== -->
+
+      <div
+        class="gallery-grid"
+        id="galleryGrid">
+
+        <!-- Images are loaded using JavaScript -->
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+
+    <a href="#" class="logo">
+      Code Alpha
+    </a>
+
+
+    <p>
+      Made to celebrate the art of seeing.
+    </p>
+
+
+    <p>
+      © 2026 Code Alpha Image Gallery
+    </p>
+
+
+  </footer>
+
+
+
+  <!-- =========================
+       LIGHTBOX
+  ========================== -->
+
+  <div
+    class="lightbox"
+    id="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Image viewer"
+    aria-hidden="true">
+
+
+    <!-- CLOSE BUTTON -->
+
+    <button
+      class="close-btn"
+      id="closeBtn"
+      aria-label="Close image viewer">
+
+      ×
+
+    </button>
+
+
+
+    <!-- PREVIOUS BUTTON -->
+
+    <button
+      class="lightbox-nav prev-btn"
+      id="prevBtn"
+      aria-label="Previous image">
+
+      ‹
+
+    </button>
+
+
+
+    <!-- LARGE IMAGE -->
+
+    <div class="lightbox-content">
+
+
+      <img
+        id="lightboxImage"
+        src=""
+        alt="">
+
+
+      <div class="lightbox-info">
+
+
+        <div>
+
+          <p
+            id="lightboxCategory"
+            class="eyebrow">
+          </p>
+
+
+          <h3
+            id="lightboxTitle">
+          </h3>
+
+        </div>
+
+
+        <p
+          id="imageCounter"
+          class="image-counter">
+
+          1 / 12
+
+        </p>
+
+
+      </div>
+
+    </div>
+
+
+
+    <!-- NEXT BUTTON -->
+
+    <button
+      class="lightbox-nav next-btn"
+      id="nextBtn"
+      aria-label="Next image">
+
+      ›
+
+    </button>
+
+
+  </div>
+
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
